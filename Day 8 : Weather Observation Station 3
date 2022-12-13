@@ -4,6 +4,8 @@ Query a list of CITY names from STATION for cities that have an even ID number. 
 The STATION table is described as follows:
 where LAT_N is the northern latitude and LONG_W is the western longitude.
 
+
+----------------------------- Sollution---------------------------
 /*
     Enter your query here and follow these instructions:
     1. Please append a semicolon ";" at the end of the query and enter your query in a single line to avoid error.
