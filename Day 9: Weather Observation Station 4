@@ -9,7 +9,8 @@ CITY values 'New York', 'New York', 'Bengalaru', there are 2 different city name
 
 -------------------------------Sollution----------------------------------
 
-select count(CITY)-count(distinct CITY) from STATION
+SELECT count(CITY)-count(distinct CITY)
+FROM STATION
 
 
 
