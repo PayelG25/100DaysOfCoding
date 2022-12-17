@@ -8,6 +8,7 @@ STATION(ID number, CITY Vvarchar, STATE varchar, LAT_N number, LONG_W number )
 
 where LAT_N is the northern latitude and LONG_W is the western longitude.
 
+
 ----------------------------------Solution-----------------------------------------------
 
 SELECT 
@@ -15,4 +16,5 @@ SELECT
 FROM 
       STATION 
 WHERE 
-     CITY LIKE '%[AEIOU]';
+     CITY 
+        LIKE '%[AEIOU]' ;
