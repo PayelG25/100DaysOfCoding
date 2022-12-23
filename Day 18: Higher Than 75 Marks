@@ -6,7 +6,33 @@ Input Format
 
 The STUDENTS table is described as follows:
 
+STUDENTS(ID Integer, Name String, Marks Integer);
 The Name column only contains uppercase (A-Z) and lowercase (a-z) letters.
+
+Sample Input:
+________________________________________
+ID  |      Name          |  Marks      |
+________________________________________          
+1   |     Ashley         |    81       |
+________________________________________
+2   |    Samantha        |   75        |
+________________________________________
+4   |    Julia           |   76        |
+________________________________________
+3   |    Belvet          |   84        |
+________________________________________
+
+Sample Output
+
+Ashley
+Julia
+Belvet
+
+Explanation
+
+Only Ashley, Julia, and Belvet have Marks > 75 . 
+If you look at the last three characters of each of their names, 
+there are no duplicates and 'ley' < 'lia' < 'vet'.
 
 
 ----------------------------------Solution--------------------------------------------------------------------
