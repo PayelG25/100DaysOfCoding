@@ -4,6 +4,21 @@ Query the average population for all cities in CITY, rounded down to the nearest
 
 The CITY table is described as follows:
 
+Input Format
+______________________________
+|   Column    |      Type    |
+______________________________
+|    ID       |     NUMBER   |
+______________________________
+|    NAME     |     VARCHAR  |
+______________________________
+| COUNTRYCODE |     VARCHAR  |
+______________________________
+|   DISTRICT  |     VARCHAR  |
+______________________________
+|  POPULATION |     NUMBER   |
+______________________________
+
 
 
 ----------------------------------------------------Solution--------------------------------------------------------------------------
@@ -11,4 +26,4 @@ The CITY table is described as follows:
 SELECT 
       FLOOR(AVG(POPULATION))
 FROM 
-      CITY
+      CITY ;
