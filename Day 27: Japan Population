@@ -6,7 +6,20 @@ Input Format
 
 The CITY table is described as follows:
 
-
+Input Format
+______________________________
+|   Column    |      Type    |
+______________________________
+|    ID       |     NUMBER   |
+______________________________
+|    NAME     |     VARCHAR  |
+______________________________
+| COUNTRYCODE |     VARCHAR  |
+______________________________
+|   DISTRICT  |     VARCHAR  |
+______________________________
+|  POPULATION |     NUMBER   |
+______________________________
 
 
 -----------------------------------------------------Solution-----------------------------------------------------------------
@@ -16,5 +29,5 @@ SELECT
 FROM 
       CITY
 WHERE 
-      COUNTRYCODE = 'JPN'
+      COUNTRYCODE = 'JPN' ;
 
