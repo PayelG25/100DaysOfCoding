@@ -4,11 +4,18 @@ Samantha was tasked with calculating the average monthly salaries for all employ
 
 Write a query calculating the amount of error (i.e.:  average monthly salaries), and round it up to the next integer.
 
-Input Format
-
 The EMPLOYEES table is described as follows:
 
-
+Input Format
+______________________________
+|   Column    |      Type    |
+______________________________
+|    ID       |     INTEGER  |
+______________________________
+|    NAME     |     STRING   |
+______________________________
+|   SALARY    |   INTEGER    |
+______________________________
 
 Note: Salary is per month.
 
