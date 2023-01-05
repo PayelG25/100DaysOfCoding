@@ -1,3 +1,5 @@
+Problem Statement
+
 We define an employee's total earnings to be their monthly  worked, and 
 the maximum total earnings to be the maximum total earnings for any employee 
 in the Employee table. Write a query to find the maximum total earnings for all 
@@ -7,6 +9,18 @@ Then print these values as  space-separated integers.
 Input Format
 
 The Employee table containing employee data for a company is described as follows:
+
+______________________________
+|   Column    |      Type    |
+______________________________
+| EMPLOYEE_ID |     INTEGER  |
+______________________________
+|    NAME     |     STRING   |
+______________________________
+|   MONTHS    |     INTEGER  |
+______________________________
+|   SALARY    |   INTEGER    |
+______________________________
 
 
 where employee_id is an employee's ID number, 
@@ -20,7 +34,7 @@ Sample Output
 
 ---------------------------------------------------Solution-------------------------------------------------------------------------------------
 
-select (months * salary) as m, count(employee_id) 
-from employee 
-group by m 
-order by m desc limit 1;
+SELECT (months * salary) as M, count(employee_id) 
+FROM EMPLOYEE 
+GROUP BY M 
+ORDER BY M DESC limit 1;
