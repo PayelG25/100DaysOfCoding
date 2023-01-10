@@ -1,6 +1,6 @@
 Problem Statement
 
-Query the smallest Northern Latitude (LAT_N) from STATION that is greater than 38.7780 . Round your answer to 4 decimal places.
+Query the smallest Northern Latitude (LAT_N) from STATION that is greater than 38.7780. Round your answer to 4 decimal places.
 
 Input Format
 
@@ -12,6 +12,6 @@ Where LAT_N is the northern latitude and LONG_W is the western longitude.
 
 
 ----------------------------------------------------Solution----------------------------------------------------
-select round(min(lat_n), 4)
-from station
-where lat_n > 38.7780
+SELECT round(min(lat_n), 4)
+FROM station
+WHERE lat_n > 38.7780;
