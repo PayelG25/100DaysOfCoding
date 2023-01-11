@@ -12,7 +12,7 @@ Input Format
 
 The STATION table is described as follows:
 
-
+STATION(ID,CITY,STATE,LAT_N,LONG_W)
 
 Where LAT_N is the northern latitude and LONG_W is the western longitude.
 
@@ -20,4 +20,4 @@ Where LAT_N is the northern latitude and LONG_W is the western longitude.
 ----------------------------------------------------Solution----------------------------------------------------
 
 Select ROUND(abs((min(LAT_N) - max(LAT_N))) + abs((min(LONG_W) - max(LONG_W))),4)
-from STATION 
+from STATION;
