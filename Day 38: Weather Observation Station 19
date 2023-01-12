@@ -11,6 +11,12 @@ Query the Euclidean Distance between points  and  and format your answer to disp
 
 Input Format
 
+The STATION table is described as follows:
+
+STATION(ID,CITY,STATE,LAT_N,LONG_W)
+
+Where LAT_N is the northern latitude and LONG_W is the western longitude.
+
 ----------------------------------------------------Solution----------------------------------------------------
 
 SELECT ROUND(SQRT(POWER(MIN(LAT_N)-MAX(LAT_N),2)+POWER(MIN(LONG_W)-MAX(LONG_W),2)),4)
