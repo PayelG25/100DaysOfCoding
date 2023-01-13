@@ -13,4 +13,4 @@ CITY(ID,NAME,COUNTRYCODE,DISTRICT,POPULATION)
 
 select  sum(city.population) from city, country
 
-where CITY.countrycode=Country.code AND country.continent = 'ASIA';
+where CITY.countrycode=Country.code AND country.continent = 'ASIA'
