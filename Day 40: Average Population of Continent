@@ -7,6 +7,9 @@ Note: CITY.CountryCode and COUNTRY.Code are matching key columns.
 
 Input Format
 
+The CITY table is described as follows:
+
+CITY(ID,NAME,COUNTRYCODE,DISTRICT,POPULATION)
 
 ----------------------------------------------------------------Solution-------------------------------------------------------
 
