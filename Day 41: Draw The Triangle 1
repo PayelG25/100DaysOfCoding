@@ -12,6 +12,7 @@ Write a query to print the pattern P(20).
 
 -------------------------------------------------------Solution---------------------------------------------
 
+DELIMITER //
 
 CREATE PROCEDURE print (IN n INTEGER)
 BEGIN
@@ -19,6 +20,7 @@ BEGIN
         SELECT REPEAT('* ', n);
         SET n = n - 1;
     END WHILE
-
+    
+END//
 
 CALL print(20)
