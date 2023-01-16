@@ -1,0 +1,21 @@
+P(R) represents a pattern drawn by Julia in R rows. The following pattern represents P(5):
+
+* 
+* * 
+* * * 
+* * * * 
+* * * * *
+Write a query to print the pattern P(20).
+
+-----------------------------------------------------------------Solution---------------------------------------------------
+
+
+
+CREATE PROCEDURE print (IN n INTEGER) BEGIN DECLARE x INTEGER; SET x = n;
+
+WHILE n > 0 DO
+    SELECT REPEAT('* ', x - n + 1);
+    SET n = n - 1 ;
+END WHILE;
+
+CALL print(20);
