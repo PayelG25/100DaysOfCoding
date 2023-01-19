@@ -1,0 +1,19 @@
+Problem Statment
+
+A median is defined as a number separating the higher half of a data set from the lower half.
+Query the median of the Northern Latitudes (LAT_N) from STATION and round your answer to 4 decimal places.
+
+
+where LAT_N is the northern latitude and LONG_W is the western longitude.
+
+
+------------------------------------------------------------------Solution-----------------------------------------------------------------
+
+With rank_ as
+(
+select lat_n, 
+row_number()over(order by lat_n desc) as rank_ 
+from station
+ )
+select round(lat_n,4) from rank_
+where rank_=(round((select count(lat_n) from station)/2))
