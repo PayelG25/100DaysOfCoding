@@ -2,6 +2,11 @@ Given the CITY and COUNTRY tables, query the names of all cities where the CONTI
 
 Note: CITY.CountryCode and COUNTRY.Code are matching key columns.
 
+Input Format
+
+The CITY and COUNTRY tables are described as follows:
+
+CITY (ID number, NAME VARCHAR(20), COUNTRYCODE VARCHAR(20), DISTRICT VARCHAR(20), POPULATION Number)
 
 COUNTRY Table
 
