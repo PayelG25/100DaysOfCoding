@@ -1,0 +1,31 @@
+You are given a table, Functions, containing two columns: X and Y.
+
+___________________________________________
+    Column       |         Type            |
+_________________|_________________________|
+     X           |         Integer         |
+_________________|_________________________|
+     Y           |         Integer         |
+_________________|_________________________|
+
+
+Two pairs (X1, Y1) and (X2, Y2) are said to be symmetric pairs if X1 = Y2 and X2 = Y1.
+
+Write a query to output all such symmetric pairs in ascending order by the value of X. List the rows such that X1 ≤ Y1.
+
+Sample Output
+
+20 20
+20 21
+22 23
+
+--------------------------------------------------------------------------Solution-----------------------------------------------------
+
+SELECT A.X, A.Y FROM Functions AS A
+    INNER JOIN Functions AS B
+    WHERE (A.X = B.Y) AND (A.Y = B.X) AND (A.X < A.Y)
+UNION
+    SELECT X, Y FROM Functions
+    GROUP BY X, Y
+    HAVING (X=Y) AND (COUNT(*) > 1)
+ORDER BY X;
